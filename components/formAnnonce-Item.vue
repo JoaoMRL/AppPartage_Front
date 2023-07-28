@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Annonces, User } from 'entities';
-const { data:UserData, refresh } = useFetch<User[]>('http://localhost:8000/api/user');
+const { data:UserData } = useFetch<User[]>('http://localhost:8000/api/user');
 
 const emit = defineEmits(['submitAnnonce']);
 
